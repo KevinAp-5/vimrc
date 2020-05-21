@@ -1,2 +1,2 @@
 # vimrc
-meu vim rc
+meu .vimrc
