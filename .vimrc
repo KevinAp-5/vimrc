@@ -6,7 +6,8 @@ inoremap <S-Down> <Esc>:m+<CR>
 set list
 set tabstop=4
 set autoindent
-let g:indentLine_color_term = 239
+set smartindent
+let g:indentLine_color_term = 200
 set shiftwidth=4
 set expandtab
 inoremap <C-H> <C-W>
@@ -15,7 +16,9 @@ set noswapfile
 set colorcolumn=80
 set showmatch
 highlight ColorColumn ctermbg=white
-let python_hightlight_all=1
+let python_hightlight_all=0
 let &t_SI = "\<esc>[5 q"
 let &t_SR = "\<esc>[5 q"
 let &t_EI = "\<esc>[2 q"
+colorscheme atom
+hi Normal guibg=NONE ctermbg=NONE
