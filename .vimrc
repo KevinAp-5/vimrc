@@ -1,3 +1,8 @@
+call plug#begin()
+Plug 'preservim/NERDTree'
+Plug 'morhetz/gruvbox'
+call plug#end()
+nmap <C-o> :NERDTreeToggle<CR>
 set listchars=tab:\|\ 
 nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
@@ -15,10 +20,11 @@ set number
 set noswapfile
 set colorcolumn=80
 set showmatch
-highlight ColorColumn ctermbg=white
+highlight ColorColumn ctermbg=blue
 let python_hightlight_all=0
 let &t_SI = "\<esc>[5 q"
 let &t_SR = "\<esc>[5 q"
 let &t_EI = "\<esc>[2 q"
-colorscheme atom
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
+set background=dark
