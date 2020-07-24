@@ -1,6 +1,7 @@
 call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 nmap <C-o> :NERDTreeToggle<CR>
 set listchars=tab:\|\ 
@@ -25,6 +26,6 @@ let python_hightlight_all=0
 let &t_SI = "\<esc>[5 q"
 let &t_SR = "\<esc>[5 q"
 let &t_EI = "\<esc>[2 q"
-colorscheme gruvbox
+colorscheme dracula
 hi Normal guibg=NONE ctermbg=NONE
 set background=dark
