@@ -1,6 +1,5 @@
 call plug#begin()
 Plug 'preservim/NERDTree'
-Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 nmap <C-o> :NERDTreeToggle<CR>
