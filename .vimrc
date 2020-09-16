@@ -4,10 +4,17 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 nmap <C-o> :NERDTreeToggle<CR>
 set listchars=tab:\|\ 
-nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
+nnoremap <S-Up> :m-2<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
+
+nnoremap <S-Down> :m .+1<CR>==
+nnoremap <S-Up> :m .-2<CR>==
+inoremap <S-Down> <Esc>:m .+1<CR>==gi
+inoremap <S-Up> <Esc>:m .-2<CR>==gi
+vnoremap <S-Down> :m '>+1<CR>gv=gv
+vnoremap <S-Up> :m '<-2<CR>gv=gvi
 set list
 set tabstop=4
 set autoindent
