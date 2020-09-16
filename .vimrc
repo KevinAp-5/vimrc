@@ -15,6 +15,10 @@ inoremap <S-Down> <Esc>:m .+1<CR>==gi
 inoremap <S-Up> <Esc>:m .-2<CR>==gi
 vnoremap <S-Down> :m '>+1<CR>gv=gv
 vnoremap <S-Up> :m '<-2<CR>gv=gvi
+
+inoremap <C-k> <Esc>:s!^!#!<enter><CR>==gi
+vnoremap <C-k> :s!^!#!<enter> 
+
 set list
 set tabstop=4
 set autoindent
