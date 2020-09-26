@@ -20,9 +20,9 @@ inoremap <C-k> <Esc>:s!^!#!<enter><CR>==gi
 vnoremap <C-k> :s!^!#!<enter> 
 nnoremap <C-k> :s!^!#!<enter><CR>==
 
-inoremap <C-c> <Esc>:s!#! !<enter><CR>==gi
-vnoremap <C-c> :s!#! !<enter>
-nnoremap <C-c> :s!#! !<enter><CR>==
+inoremap <C-c> <Esc>:s!#!!<enter><CR>==gi
+vnoremap <C-c> :s!#!!<enter>
+nnoremap <C-c> :s!#!!<enter><CR>==
 
 set list
 set tabstop=4
