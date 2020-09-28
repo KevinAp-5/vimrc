@@ -1,9 +1,9 @@
 call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Yggdroot/indentLine'
 call plug#end()
 nmap <C-o> :NERDTreeToggle<CR>
-set listchars=tab:\|\ 
 nnoremap <S-Down> :m+<CR>
 nnoremap <S-Up> :m-2<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
@@ -24,11 +24,13 @@ inoremap <C-c> <Esc>:s!#!!<enter><CR>==gi
 vnoremap <C-c> :s!#!!<enter>
 nnoremap <C-c> :s!#!!<enter><CR>==
 
+set list lcs=tab:\|\
 set list
+let g:indentLine_color_term = 103
+let g:indentLine_char = '|'
 set tabstop=4
 set autoindent
 set smartindent
-let g:indentLine_color_term = 200
 set shiftwidth=4
 set expandtab
 inoremap <C-H> <C-W>
@@ -36,7 +38,7 @@ set number
 set noswapfile
 set colorcolumn=80
 set showmatch
-highlight ColorColumn ctermbg=blue
+highlight ColorColumn ctermbg=green
 let python_hightlight_all=0
 let &t_SI = "\<esc>[5 q"
 let &t_SR = "\<esc>[5 q"
@@ -53,4 +55,4 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-highlight Comment ctermfg=green
+highlight Comment ctermfg=blue
