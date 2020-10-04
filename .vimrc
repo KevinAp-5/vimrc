@@ -26,7 +26,7 @@ nnoremap <C-c> :s!#!!<enter><CR>==
 
 set list lcs=tab:\|\
 set list
-let g:indentLine_color_term = 103
+let g:indentLine_color_term = 12
 let g:indentLine_char = '|'
 set tabstop=4
 set autoindent
@@ -37,7 +37,6 @@ inoremap <C-H> <C-W>
 set number
 set noswapfile
 set colorcolumn=80
-set showmatch
 highlight ColorColumn ctermbg=green
 let python_hightlight_all=0
 let &t_SI = "\<esc>[5 q"
@@ -56,3 +55,4 @@ if &term =~ '^screen'
 endif
 
 highlight Comment ctermfg=blue
+hi MatchParen cterm=Bold ctermbg=None ctermfg=red
