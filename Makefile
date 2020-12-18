@@ -1,3 +1,4 @@
-all: vimpluginstall
-vimpluginstall:
-	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+all: move
+
+move:
+	cp .vimrc ~/
