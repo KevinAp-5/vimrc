@@ -24,8 +24,19 @@ inoremap <C-c> <Esc>:s!#!!<enter><CR>==gi
 vnoremap <C-c> :s!#!!<enter>
 nnoremap <C-c> :s!#!!<enter><CR>==
 
+
+"shift tab
+  "command mode
+nnoremap <S-Tab> <<
+  "for insert mode
+inoremap <S-Tab> <C-d>
+  "for visual mode
+vnoremap <S-Tab> <<
+
+syntax on
 set list lcs=tab:\|\
 set list
+let g:python_highlight_all = 1
 let g:indentLine_color_term = 12
 let g:indentLine_char = '|'
 set tabstop=4
