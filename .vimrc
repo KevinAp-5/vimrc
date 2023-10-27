@@ -1,9 +1,9 @@
 call plug#begin()
-Plug 'preservim/NERDTree'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'Yggdroot/indentLine'
+Plug 'vim-python/python-syntax'
 call plug#end()
-nmap <C-o> :NERDTreeToggle<CR>
+
 nnoremap <S-Down> :m+<CR>
 nnoremap <S-Up> :m-2<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
