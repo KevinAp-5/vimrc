@@ -24,6 +24,8 @@ inoremap <C-c> <Esc>:s!#!!<enter><CR>==gi
 vnoremap <C-c> :s!#!!<enter>
 nnoremap <C-c> :s!#!!<enter><CR>==
 
+nnoremap <C-Up> 7k
+nnoremap <C-Down> 7j
 
 "shift tab
   "command mode
