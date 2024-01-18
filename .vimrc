@@ -2,7 +2,27 @@ call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'Yggdroot/indentLine'
 Plug 'vim-python/python-syntax'
+Plug 'preservim/nerdtree'
+Plug 'frazrepo/vim-rainbow'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'kristijanhusak/vim-js-file-import'
+Plug 'alvan/vim-closetag'
+Plug 'neoclide/coc.nvim'
+
 call plug#end()
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+let g:NERDTreeWinPos = "right"
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 
 nnoremap <S-Down> :m+<CR>
 nnoremap <S-Up> :m-2<CR>
@@ -42,7 +62,6 @@ let g:python_highlight_all = 1
 let g:indentLine_color_term = 12
 let g:indentLine_char = '|'
 set tabstop=4
-set autoindent
 set smartindent
 set shiftwidth=4
 set expandtab
